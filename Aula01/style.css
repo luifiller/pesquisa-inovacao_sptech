@@ -1,0 +1,43 @@
+/* utiliza-se '.titulo' para referir-se a uma class a ser estilizada pelo CSS */
+/* também pode ser utilizado o nome da própria tag que será estilizada */
+/* '.titulo' = chave/seletor  |  'color:' = propriedade  |  'black;' = valor */
+.titulo{
+    color: black;
+    background-color: rgb(82, 76, 250);
+    width: 15%;
+}
+
+.subtitulo{
+    color: green;
+}
+
+
+/*
+1. CSS é estilização em cascata. Caso haja redundância de estilos para uma mesma class, o que será exibido é o último comando relacionado àquela class
+2. Utiliza-se '!important' para declarar que uma propriedade é imporante e manterá ela independente da hierarquia
+.titulo{
+    color: green !important;
+    background-color: rgb(100, 205, 250);
+    width: 15%;
+} */
+
+/* Herância de estilização CSS 
+Inline
+#Id
+.class
+Tag */
+
+
+/* Unidades de medidas CSS
+1. Layout Fluido
+%: porcentagem | Se comportará de acordo com o tamanho da tela e se flexibilizando 
+vh: viewport height
+vw: viewport widht
+em: font-size do elemento vinculado
+rem: font-size do elemento raiz
+
+
+2. Layout Fixo
+px: pixel
+pt: points
+*/
