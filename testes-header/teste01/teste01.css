@@ -1,3 +1,44 @@
+* {
+    /* padding é a margem intera e margin retira as margens e bordas */
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+}
+
 .header {
-    background-color: pink;
+    padding: 15px;
+    border-bottom: 3px solid black;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: black;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    /* 'lsit-style' retira a propriedade da lista, por exemplo tirando o bullet point */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li {
+    color: black;
+    font-weight: 600;
+}
+
+.meu_painel {
+    color: blue;
 }
