@@ -5,13 +5,13 @@
     /* padding é a margem intera e margin retira as margens e bordas */
     padding: 0;
     margin: 0;
-    background-color: black;
     color: #f1f1f1;
 }
 
 .header {
     padding: 15px;
     border-bottom: 3px solid #32b9cd;
+    background-color: black;
 }
 
 .container {
@@ -28,7 +28,7 @@ h1 {
 }
 
 ul {
-    /* 'lsit-style' retira a propriedade da lista, por exemplo tirando o bullet point */
+    /* 'list-style' retira a propriedade da lista, por exemplo tirando o bullet point */
     display: flex;
     width: 350px;
     justify-content: space-around;
@@ -37,4 +37,22 @@ ul {
 
 li {
     color: #e3b062;
+}
+
+.banner {
+    background-image: url("../img/bg-jelly-fish-para_outras_pags.png"); /* chamar uma imagem */ /* utiliza-se dois pontos finais ('..') no início para que saia da onde está e vá para uma outra localização/diretório */
+    padding: 100px 0;
+}
+
+.banner .container {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner p {
+    width: 280px;
+    color: #FFFFFF;
+    font-size: 30px;
 }
