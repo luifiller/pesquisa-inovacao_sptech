@@ -5,13 +5,14 @@
     /* padding é a margem intera e margin retira as margens e bordas */
     padding: 0;
     margin: 0;
-    color: #f1f1f1;
+    font-family: sans-serif;
 }
 
 .header {
     padding: 15px;
     border-bottom: 3px solid #32b9cd;
     background-color: black;
+    color: #f1f1f1;
 }
 
 .container {
@@ -82,4 +83,23 @@ li {
 
 .caixa img {
     width: 170px;
+}
+
+.footer {
+    padding: 45px 0;
+    background-color: #32b9cd;
+}
+
+.footer .container {
+    justify-content: center;
+}
+
+.footer p {
+    color: #FFFFFF;
+}
+
+li a {
+    color: #e3b062;
+    text-decoration: none;
+    cursor: pointer;
 }
