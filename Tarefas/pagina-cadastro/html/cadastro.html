@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+          <h1>AquaTech</h1>
+          <div class="navbar">
+              <ul>
+                  <li><a href="home.html">Inicial</a></li>
+                  <li>Simulador</li>
+                  <li>|</li>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="cadastro.html">Cadastro</a></li>
+              </ul>
+          </div>
+        </div>  
+      </div>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="container">
+            <div class="caixa-formulario">
+                <h2>Bem-vindo!</h2>
+                <div class="campo">
+                    <label for="in_nome">Nome:</label>
+                    <input placeholder="Seu nome" type="text" id="in_nome" class="in_campo">
+                </div>
+
+                <div class="campo">
+                    <label for="in_email">E-mail:</label>
+                    <input placeholder="meuemail@provador.com" type="email" id="in_email" class="in_campo">
+                </div>
+                
+                <div class="campo">
+                    <label for=in_senha">Senha:</label>
+                    <input placeholder="******" type="password" id="in_senha" class="in_campo">
+                </div>
+
+                <div class="campo">
+                    <label for="in_confSenha">Confirmação da Senha:</label>
+                    <input placeholder="******" type="password" id="in_confSenha" class="in_campo">
+                </div>
+                <button onclick="enviar()">Cadastrar</button>
+            </div>   
+        </div>
+    </div>
+
+      <!-- footer -->
+    <div class="footer">
+        <div class="container">
+          <p>Feito com amor por alunos ♥ SPTech &copy; 2022</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    var email = in_mail.value
+    var senha = in_senha.value
+
+    function enviar() {
+        
+    }
+
+</script>

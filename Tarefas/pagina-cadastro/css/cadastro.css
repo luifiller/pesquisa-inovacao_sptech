@@ -1,0 +1,61 @@
+.caixa-formulario {
+    background-color: #e5e5e5;
+    padding: 30px 100px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-formulario h2 {
+    color: #e6005a;
+    margin-bottom: 20px;
+    font-size: 27px;
+    opacity: 0.5;
+}
+
+.campo {
+    display: flex;
+    margin: 3px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.campo input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #32b9cd;
+    color: black;
+}
+
+.campo ::placeholder {
+    text-align: center;
+    font-size: 12px;
+}
+
+.campo label {
+    color: #e6005a;
+    margin: 2px 0;
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.caixa-formulario button {
+    margin-top: 20px;
+    width: 140px;
+    color: #FFFFFF;
+    background-color: #e6005a;
+    padding: 13px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.caixa-formulario button:hover { /* o ':hover' faz com que mude as características de um elemento*/
+        opacity: 0.8;
+}

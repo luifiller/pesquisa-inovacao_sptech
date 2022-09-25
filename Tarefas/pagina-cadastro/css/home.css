@@ -1,0 +1,105 @@
+/* é uma boa prática ir estilizando na ordem das divs e elementos do HTML */
+
+* {
+    /* se ao invés de colocar 'body' colocar '*' a estilização será aplicada no site inteiro */
+    /* padding é a margem intera e margin retira as margens e bordas */
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 15px;
+    border-bottom: 3px solid #32b9cd;
+    background-color: black;
+    color: #f1f1f1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #32b9cd;
+    font-weight: 900;
+}
+
+ul {
+    /* 'list-style' retira a propriedade da lista, por exemplo tirando o bullet point */
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li {
+    color: #e3b062;
+}
+
+.banner {
+    background-image: url("../img/bg-jelly-fish-para_outras_pags.png"); /* chamar uma imagem */ /* utiliza-se dois pontos finais ('..') no início para que saia da onde está e vá para uma outra localização/diretório */
+    padding: 100px 0;
+}
+
+.banner .container {
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner p {
+    width: 280px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.social {
+    margin: 50px 0;
+}
+
+.social .caixas, .caixa {
+    display: flex;
+}
+
+.caixa {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.caixa h4 {
+    margin: 15px 0;
+    color: #e6005a
+} 
+
+.caixa p {
+    text-align: center;
+    color: black;
+}
+
+.caixa img {
+    width: 170px;
+}
+
+.footer {
+    padding: 45px 0;
+    background-color: #32b9cd;
+}
+
+.footer .container {
+    justify-content: center;
+}
+
+.footer p {
+    color: #FFFFFF;
+}
+
+li a {
+    color: #e3b062;
+    text-decoration: none;
+    cursor: pointer;
+}
