@@ -5,18 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #div_caixa-graficos {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            padding: 60px;
+            height:40vh; 
+            width:40vw;
+        }
+
+        canvas {
+            padding: 20px;
+        }
+    </style>
     <title>Primeiro ChartJS</title>
 </head>
-<body style="display: flex;">
+<body>
 
-    <div>
-        <canvas id="myChart" style="position: relative; height:40vh; width:40vw;"></canvas>
+    <div id="div_caixa-graficos">
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>   
+        
+        <div>
+            <canvas id="myChart2"></canvas>
+        </div>
+    
+        <div>
+            <canvas id="myChart3"></canvas>
+        </div>
     </div>
 
 </body>
 </html>
 
 <script>
+    // Primeiro gráfico de linhas
     const labels = [
         'Janeiro',
         'Fevereiro',
@@ -46,5 +71,67 @@
         document.getElementById('myChart'),
         config
     );
+    
+
+    // Segundo gráfico, de barras
+    const labels2 = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Meu segundo dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    };
+
+    const config2 = {
+        type: 'bar',
+        data: data2,
+        options: {}
+    };
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config2
+    );
+
+    
+    // Terceiro gráfico, de doughnut
+    const data3 = {
+        labels: [
+            'Vermelho',
+            'Azul',
+            'Amarelo',
+        ],
+        datasets: [{
+            label: 'Meu terceiro dataset',
+            data: [300, 50, 100],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)',
+            ],
+            hoverOffset: 4
+        }]
+    };
+    
+    const config3 = {
+        type: 'doughnut',
+        data: data3,
+    };
+    
+    const myChart3 = new Chart(
+        document.getElementById('myChart3'),
+        config3
+        );
 
 </script>
